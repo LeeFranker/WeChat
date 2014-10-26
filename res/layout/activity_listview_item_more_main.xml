@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp" >
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_black_bg"
+        android:contentDescription="@string/app_name"
+        android:padding="3dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/item_right_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/item_image"
+        android:minHeight="53dp" >
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/listview_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/item_info"
+            style="@style/listview_item_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name"
+            android:layout_marginTop="5dp" >
+        </TextView>
+
+        <com.tw.wechat.widget.ImageGridView
+            android:id="@+id/item_gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_info"
+            android:layout_marginTop="5dp" >
+        </com.tw.wechat.widget.ImageGridView>
+
+        <TextView
+            android:id="@+id/item_location"
+            style="@style/listview_item_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_gridview"
+            android:layout_marginTop="5dp" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/item_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_location"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/item_time"
+                style="@style/listview_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/item_zan"
+                style="@style/listview_item_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/border_green_bg"
+                android:text="@string/item_zan" />
+        </RelativeLayout>
+
+        <com.tw.wechat.widget.CommentView
+            android:id="@+id/item_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_time_layout"
+            android:layout_marginTop="5dp" >
+        </com.tw.wechat.widget.CommentView>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/item_right_layout"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="10dp"
+        android:background="@color/black" >
+    </View>
+
+</RelativeLayout>

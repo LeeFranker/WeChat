@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <!-- common -->
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="ransparent">#00000000</color>
+    <color name="grenen">#00FF00</color>
+    <color name="red">#FF0000</color>
+    <!-- actionbar -->
+    <color name="actionbar_bg">#1A1F21</color>
+    <color name="actionbar_press_bg">#121618</color>
+    <color name="actionbar_divider_bg">#101314</color>
+    <!-- listview -->
+	<color name="comment_bg">#EAEAEA</color>
+</resources>

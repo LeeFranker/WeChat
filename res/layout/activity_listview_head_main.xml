@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.tw.wechat"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/head_height"
+    android:background="@color/white" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp" >
+
+        <ImageView
+            android:id="@+id/head_cover_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/head_name"
+            style="@style/listview_head_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="@dimen/head_text_margin_bottom" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/divide_line_height"
+            android:layout_gravity="bottom"
+            android:background="@color/black" >
+        </View>
+    </FrameLayout>
+
+    <com.tw.wechat.widget.BorderImageView
+        android:id="@+id/head_icon_image"
+        android:layout_width="@dimen/head_image_height"
+        android:layout_height="@dimen/head_image_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/head_icon_margin_bottom"
+        android:layout_marginRight="@dimen/head_text_margin_bottom"
+        android:background="@color/white"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        app:border_color="@color/black"
+        app:border_width="3dp" />
+
+</RelativeLayout>

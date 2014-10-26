@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/gridview_item_iamge"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:background="@drawable/border_black_bg"
+        android:contentDescription="@string/app_name"
+        android:padding="3dp"
+        android:scaleType="fitXY" />
+
+</RelativeLayout>
