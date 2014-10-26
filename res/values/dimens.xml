@@ -12,6 +12,5 @@
     <dimen name="head_cover_height">250dp</dimen>
     <dimen name="head_text_margin_bottom">10dp</dimen>
     <dimen name="head_icon_margin_bottom">25dp</dimen>
-    <dimen name="head_cover_height">250dp</dimen>
 
 </resources>
